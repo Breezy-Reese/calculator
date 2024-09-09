@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+    </head>
+    <link rel="stylesheet" href="reg.css">
+    <body>
+        <div class="container">
+            <div class="curved-shape"></div>
+            <div class="curved-shape2"></div>
+            <div class="form-box Login">
+                <h2 class="animation" style="--D:0">login</h2>
+                <form action="#">
+                    <div class="input-box animation" style="--D:1">
+                        <input type="text" id="name" required>
+                        <label for="name">Username</label>
+                    </div>
+                    <div class="input-box animation" style="--D:2">
+                        <input type="password" id="pass" required>
+                        <label for="pass">Password</label>
+                        </div>
+                        <div class="cbox animation" style="--D:3">
+                        <input type="checkbox" name="check" id="check">
+                        <label for="check">Show Password</label>
+                        
+                    </div>
+                    <div class="input-box animation" style="--D:4">
+                       <button type="submit" class="btn" >Login</button>
+                    </div>
+                    <div class="regi-link animation" style="--D:5">
+                        <p>Don't have an account ?
+                            <a href="#" class="signupLink">Sign up</a></p>
+            </div>
+                </form>
+          </div>
+            <div class="info-content Login">
+                <h2 class="animation" style="--D:0">Basil Web</h2>
+                <p class="animation" style="--D:1">Lorem ipsum dolor sit amet consect
+                    ygjg uffun hkf
+                </p>
+            </div>
+            <div class="form-box Register">
+                <h2 class="animation">Register</h2>
+                <form action="#">
+                    <div class="input-box animation">
+                        <input type="text" id="name"required>
+                        <label for="name">Username</label>
+                    </div>
+                    <div class="input-box animation" >
+                        <input type="password" id="pass" required>
+                        <label for="pass">Password</label>
+                        </div>
+                        <div class="cbox animation">
+                        <input type="checkbox" id="">
+                        <label for="">Show Password</label>
+                        
+                    </div>
+                    <div class="input-box animation">
+                       <button type="submit" class="btn" >Register</button>
+                    </div>
+                    <div class="regi-link animation">
+                        <p> Have an account ?
+                            <a href="#" class="signupLink">Sign in</a></p>
+                    </div>
+                </form>
+            </div>
+            <div class="info-content Register">
+                <h2 class="animation">Basil Web</h2>
+                <p class="animation">Lorem ipsum dolor sit amet consect
+                    ygjg uffun hkf
+                </p>
+            </div>
+        </div>
+            <script src="reg.js"></script>
+               <script>
+
+let pass = document.getElementById('pass');
+        let check = document.getElementById('check');
+
+        check.onclick = function(){
+            if(check.checked){
+                pass.type = 'text';
+
+            }else{
+                pass.type = 'password';
+            }
+        }
+
+        </script>
+
+    </body>
+    
+</html>
